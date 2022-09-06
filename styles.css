@@ -1,0 +1,682 @@
+
+@font-face {
+    font-family: Monserrat-semibold;
+    font-size: 16px;
+    src: url(Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Monserrat-light;
+    font-size: 16px;
+    src: url(Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Monserrat-regular;
+    font-size: 16px;
+    src: url(Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    src: url(Montserrat-Medium.ttf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat-Medium;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color1: #34B0BE;
+    --color2: #2b2a3d;
+    --color3: #02051d;
+    --color4: #FFFFFF;
+    font-size: 16px; 
+}
+
+body{
+    background-color: var(--color3);
+    block-size: 22rem;
+}
+
+#navigation{
+    height: 40px;
+    width: 100vw;
+}
+
+#navigation .content-navbar{
+    background-color:none;
+    position: fixed;
+    padding-right: 20px;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    z-index: 8000;
+    transition: 0.3s ease-in;
+}
+
+#navigation .content-navbar-show{
+    transition: 0.3s ease-in;
+    background-color:var(--color2);
+}
+
+#navigation .content-navbar img{
+    /* position: fixed; */
+    cursor: pointer;
+    /* margin-right: 1.5rem; */
+    height: 30px;
+    width: 30px;
+    z-index: 9000;
+}
+
+#navigation .content-menu{
+    width: 100vw;
+    background-color: var(--color4);
+    opacity: 0.8;
+    position: fixed;
+    top:40px;
+    z-index: 10000;
+    transition: transform 0.5s;
+    transform: translateX(100%);
+}
+
+#navigation .content-menu-show{
+    transform: translateX(0);
+}
+
+#navigation .navbar-items{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation .content-menu .navbar-items li{
+    padding: 0.5rem;
+    
+} 
+
+#navigation .content-menu .navbar-items a{
+    text-decoration: none;
+    color: var(--color2);
+}
+
+/*=======================================================*/
+/*============================ HOME =======================*/
+/*=========================================================*/
+
+#home  {
+
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+#home .image-personal{
+    
+    /* padding: 2rem; */
+
+    /* width: 200px; */
+    /* height: 500px; */
+    
+    /* flex-direction: column ; */
+    /* justify-content: center;
+    align-items: center; */
+
+    /* display: block; */
+    /* margin: auto; */
+
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    
+}
+
+#home .image-personal :nth-child(1){
+
+    height: 100%;
+    width: 100%;
+    /* display: block; */
+    opacity: 0.2;
+    z-index: 1000;
+}
+
+#home .image-personal :nth-child(2){
+    position: absolute;
+    
+    /* height: 300px;
+    width: 300px; */
+    /* margin: auto; */
+    /* display: block; */
+    /* background: red; */
+
+    
+    /* width: 55%;
+    height:50%; */
+    top: 4rem;
+    z-index: 1500;
+}
+
+#home .personal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .personal-info .personal-info-name{
+    width: 300px;  /*=====*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .personal-info .personal-info-name :nth-child(1){
+    color: var(--color4);
+    font-size: 2rem;
+}
+#home .personal-info .personal-info-name :nth-child(2){
+    color: var(--color1);
+    font-weight:550;
+    font-size: 50px;
+}
+#home .personal-info .personal-info-name :nth-child(3){
+    height: 2px;
+    width: 50%;
+    background-color: var(--color4);
+}
+#home .personal-info .personal-info-name :nth-child(4){
+    margin-top: 10px;
+    color: var(--color4);
+    font-size: 1rem;
+}
+
+
+#home .personal-info .personal-info-exp{
+    padding-top: 2rem;
+}
+
+#home .personal-info .personal-info-exp p{
+    color: var(--color4);
+}
+
+#home .personal-info .personal-info-exp p span{
+    color: var(--color1);
+}
+
+#home .personal-info .socialnetwork {
+    padding: 1rem;
+    width: 40vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+#home .personal-info .socialnetwork img{
+    margin-left:1rem;
+    margin-right:1rem;
+    border: 5px solid  var(--color4);
+    background-color: var(--color4);
+    border-radius: 50%; 
+}
+
+#home .plataforms {
+    padding: 10px;
+    /* border: 1px solid blue; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content:space-evenly; */
+  
+}
+#home .plataforms .plataform-box{
+    padding: 15px;
+    width: 300px; /*================================ SSSSSSSSSSSSS ============================*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: var(--color2);
+    border-radius: 10px ;
+}
+
+#home .plataforms .plataform-box img{
+    padding: 5px;
+    border-left: 10px solid var(--color4);
+    border-right:10px solid var(--color4);
+    border-radius: 10px;
+    width: 4rem;
+    height: 2.5rem;
+    background-color: var(--color4);
+}
+
+/*=======================================================*/
+/*====================== ABOUT ME =======================*/
+/*======================================================*/
+
+#aboutme {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+     /* width: 350px; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: center; */
+    z-index: 550;
+}
+
+#aboutme span{
+    padding: 2rem;
+    color: var(--color1);
+    font-size: 2rem;
+}
+
+#aboutme .text-aboutme p{
+    /* margin-top: 2rem; */
+
+    width: 80vw; /* ================== SSSSSS =======================*/
+
+    color: var(--color4);
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+/*=======================================================*/
+/*====================== SERVICES  =======================*/
+/*======================================================*/
+
+
+#services {
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100vw;
+    z-index: 600;
+}
+
+#services span{
+    margin: 2rem;
+    font-size: 2rem;
+    color: var(--color1);
+    font-weight:550;
+}
+
+#services .services-card .serviceSwiper{
+    
+    padding: 1rem;
+}
+
+ #services .services-card .serviceSwiper .swiper-wrapper{
+    padding: 1rem;
+}
+    
+
+#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    width: 250px;
+    height: 330px;
+
+    z-index: 300;
+    text-align: center;
+    background: var(--color4);
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    border-radius: 5px;
+  }
+
+#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide img{
+    /* margin-bottom: 1rem; */
+    z-index: 400;
+    height: 7rem;
+    width: 7rem;
+}
+
+#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide :nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color3);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide :nth-child(3){
+    /* padding: 3rem; */
+    /* margin-top: 2.5rem; */
+    padding: 1rem;
+    color: var(--color2);
+    font-size: 1.2rem;
+    opacity: 0.4;
+} 
+
+
+/*=======================================================*/
+/*====================== SKILLS  =======================*/
+/*======================================================*/
+
+#skills {
+    padding-top: 3rem;
+    text-align: center;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: goldenrod; */
+}
+
+#skills span{
+    color: var(--color1);
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+#skills .skill-items{
+    padding: 0.5rem;
+    width: 85vw;  /* ========================== SSSSSSSSSSSS ============================================= */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    
+}
+
+#skills .skill-items .skill-item-bar {
+    margin:1rem;
+}
+
+#skills .skill-items .skill-item-bar .skill-item-text{
+    height: 2rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#skills .skill-items .skill-item-bar .skill-item-text :nth-child(1){
+    
+    color: var(--color4);
+    font-weight: 600;
+
+}
+#skills .skill-items .skill-item-bar .skill-item-text :nth-child(2){
+    margin-top: 10px;
+    color: var(--color1);
+    font-size: 0.8rem;
+}
+
+#skills .skill-items .skill-item-bar .skill-bar{
+    height: 1.2rem;
+    background-color: var(--color4);
+    border-radius: 15px;
+
+}
+
+#skills .skill-items .skill-item-bar .skill-bar .bar{
+    height: 100%;
+    width: 80%;
+    background-color:var(--color1);
+    color:white;
+    padding: 1px;
+    border-radius: 15px;
+}
+
+/*=======================================================*/
+/*====================== PORTFOLIO  =======================*/
+/*======================================================*/
+
+
+#portfolio {
+    padding-top: 2.5rem;
+    width: 100vw;
+    text-align: center;
+
+}
+
+#portfolio span{
+    text-align: center;
+    color: var(--color1);
+    font-size: 2rem;
+}
+
+#portfolio .projects-box {
+    width: 100%; 
+    padding: 1rem;
+
+}
+
+#portfolio .projects-box .projectSwiper{
+
+} 
+
+#portfolio .projects-box .projectSwiper .swiper-wrapper {
+
+}
+
+#portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide {
+    /* position: relative; */
+    
+    /* Center slide text vertically */
+    height: 200px;   /* ========================== SSSSSSSSSSSS ============ */
+    width: 300px;   /* ========================== SSSSSSSSSSSS ============ */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* flex-direction: column; */
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  #portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide img{
+    display: block;
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px ;
+    /* s */
+    /* height: 10rem;
+    width: 10rem; */
+    /* background-color: var(--color4); */
+}
+
+/*=======================================================*/
+/*====================== CONTACT  =======================*/
+/*======================================================*/
+
+#contact {
+    padding-top: 2.5rem;
+    text-align: center;
+    width: 100vw;
+
+}
+
+#contact span{
+    color: var(--color1);
+    font-size: 2rem;
+}
+
+#contact .canals{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+#contact .canals .box-canal{
+    margin: 1rem;
+    padding-top:2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-content: center;
+
+    height: 220px;
+    width: 220px; 
+    background-color: var(--color4);
+    border-radius: 10px;
+}
+
+#contact .canals .box-canal img{
+    height: 50%;
+    width: 50%; 
+}
+
+#contact .canals .box-canal :nth-child(2){
+    margin-top: 0.5rem;
+    color: var(--color3);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#contact .canals .box-canal :nth-child(3){
+    margin-top: 1rem;
+    color: var(--color2);
+    opacity: 0.4;
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+}
+
+
+/*=======================================================*/
+/*====================== FOOTER  =======================*/
+/*======================================================*/
+#footer {
+    text-align: center;
+    width: 100vw;
+    color: var(--color1);
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    
+}
+
+#footer span:after {
+    content: ' \26A1';
+    
+}
+
+
+
+@media (min-width:850px){
+
+
+    #navigation .content-navbar{
+        display: none;
+    }
+    
+    #navigation .navbar-items{
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        
+    }
+    #navigation .content-menu{
+        padding: 1rem;
+        background-color:var(--color3);
+        transform: translateX(0);
+        top:0px;
+    }   
+
+    #navigation .content-menu .navbar-items a{
+        color: #FFFFFF;
+        padding-right: 2rem;
+    }
+
+    #navigation .content-menu .navbar-items a:hover{
+        color: #FFFFFF;
+        padding-right: 2rem;
+        color: var(--color1);
+        font-weight: 600;
+    }
+
+
+
+
+    #aboutme .text-aboutme p{
+        width: 680px; 
+    }
+    #services .services-card .serviceSwiper .swiper-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #contact .canals{
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    #footer {
+        background-color: cyan;
+    }
+    #skills .skill-items{
+        width: 722px;  /* ========================== SSSSSSSSSSSS ============================================= */  
+    }
+}
+
+@media (min-width:1010px){
+    #portfolio .projects-box{
+        padding-left: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        align-content: center;
+    }
+    #footer {
+        background-color: red;
+    }
+    
+}
+
