@@ -397,12 +397,28 @@ body{
 
 #skills .skill-items .skill-item-bar .skill-bar .bar{
     height: 100%;
-    width: 80%;
-    background-color:var(--color1);
-    color:white;
     padding: 1px;
     border-radius: 15px;
 } 
+
+
+#sb1{
+    width: 81%;
+    background-color: var(--color1);
+}
+
+#sb2{
+     width: 95%;
+     background-color: var(--color1);
+}
+
+#sb3{
+     width: 60%;
+     background-color: var(--color1);
+}
+
+
+
 
 /*=======================================================*/
 /*======================PORTFOLIO=======================*/

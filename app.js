@@ -40,9 +40,9 @@ var swiper = new Swiper('.swiper', {
     });
 
 
-const contNavbar = document.querySelector('#contentNavbar');
-
 const iconMenu = document.querySelector('#iconNav');
+
+const navMenu = document.querySelector('#contentNavbar');
 
 const selectSection = document.querySelector('.navbar-items');
 
@@ -62,16 +62,9 @@ iconMenu.addEventListener("click", (e) => {
 window.onscroll = function() {
   "use strict";
   if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
-    contNavbar.classList.add("content-navbar-show");
+    navMenu.classList.add("content-navbar-show");
   } else {
-    contNavbar.classList.remove("content-navbar-show");
-  };
-  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-	contMenu.classList.add("content-menu-web");
-  } else {
-	contMenu.classList.remove("content-menu-web");
+    navMenu.classList.remove("content-navbar-show");
   }
 };
-
-  
 
