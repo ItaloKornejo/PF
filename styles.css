@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: Montserrat-Medium;
     font-size: 16px;
@@ -93,10 +92,6 @@ body{
     color: var(--color2);
 }
 
-/*=======================================================*/
-/*============================ HOME =======================*/
-/*=========================================================*/
-
 #home  {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -109,7 +104,6 @@ body{
 }
 
 #home .image-personal{
-
     display: flex;
     flex-direction: row;
     justify-content:center ;
@@ -118,20 +112,20 @@ body{
 }
 
 #home .image-personal :nth-child(1){
-
-    height: 315px;  /* ===========================SSSSSS=======================*/
-    width: 315px;   /* ===========================SSSSSS=======================*/
+    height: 315px;  
+    width: 315px; 
     opacity: 0.2;
     z-index: 1000;
 }
 
 #home .image-personal :nth-child(2){
     position: absolute;
-    
-    height: 310px;
+    height: 280px;
     width: 220px;
-    top: 1.5rem;
+    top: 3rem;
     z-index: 1500;
+    border-radius: 40%;
+
 }
 
 #home .image-personal :nth-child(3){
@@ -156,22 +150,24 @@ body{
     color: var(--color4);
     font-size: 2rem;
 }
+
 #home .personal-info .personal-info-name :nth-child(2){
     color: var(--color1);
     font-weight:550;
     font-size: 50px;
 }
+
 #home .personal-info .personal-info-name :nth-child(3){
     height: 2px;
     width: 50%;
     background-color: var(--color4);
 }
+
 #home .personal-info .personal-info-name :nth-child(4){
     margin-top: 10px;
     color: var(--color4);
     font-size: 1rem;
 }
-
 
 #home .personal-info .personal-info-exp{
     padding-top: 2rem;
@@ -186,17 +182,15 @@ body{
 }
 
 #home .personal-info .socialnetwork {
-    padding: 1rem;
-    width: 25%;
     margin: 5px;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    gap: 10px;
 }
 
-#home .personal-info .socialnetwork img{
-    margin-left:1rem;
-    margin-right:1rem;
+#home .personal-info .socialnetwork i{
+    font-size: 3rem;
     border: 5px solid  var(--color4);
     background-color: var(--color4);
     border-radius: 50%; 
@@ -220,19 +214,31 @@ body{
     border-radius: 10px ;
 }
 
-#home .plataforms .plataform-box img{
-    padding: 5px;
-    border-left: 10px solid var(--color4);
-    border-right:10px solid var(--color4);
+#home .plataforms .plataform-box a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
+
     border-radius: 10px;
     width: 4rem;
-    height: 2.5rem;
+    height: 3rem;
     background-color: var(--color4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 350ms ease;
+}
+#home .plataforms .plataform-box i{
+    color: var(--color2);
+
 }
 
-/*=======================================================*/
-/*====================== ABOUT ME =======================*/
-/*======================================================*/
+#home .plataforms .plataform-box a:hover{
+    transform: scale(1.05);
+    transition: 350ms ease;
+}
 
 #aboutme {
     padding: 1rem;
@@ -255,18 +261,11 @@ body{
     color: var(--color4);
     font-size: 1rem;
     opacity: 0.6;
-    
 }
-
-/*=======================================================*/
-/*====================== SERVICES  =======================*/
-/*======================================================*/
-
 
 #services {
     padding-top: 2.5rem;
-    text-align: center;
-    
+    text-align: center; 
     z-index: 600;
 }
 
@@ -277,8 +276,7 @@ body{
     font-weight:550;
 }
 
-#services .services-card .serviceSwiper{
-    
+#services .services-card .serviceSwiper{ 
     padding: 1rem;
 }
 
@@ -286,14 +284,11 @@ body{
     padding: 1rem;
 }
     
-
 #services .services-card .serviceSwiper .swiper-wrapper .swiper-slide {
     position: relative;
     width: 250px;
-    height: 330px;
-
+    height: 350px;
     z-index: 300;
-    text-align: center;
     background: var(--color4);
 
     display: -webkit-box;
@@ -314,10 +309,10 @@ body{
     border-radius: 5px;
   }
 
-#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide img{
+#services .services-card .serviceSwiper .swiper-wrapper .swiper-slide i{
     z-index: 400;
-    height: 7rem;
-    width: 7rem;
+    font-size: 7rem;
+    color: var(--color1);
 }
 
 #services .services-card .serviceSwiper .swiper-wrapper .swiper-slide :nth-child(2){
@@ -336,11 +331,6 @@ body{
     opacity: 0.4;
 } 
 
-
-/*=======================================================*/
-/*====================== SKILLS  =======================*/
-/*======================================================*/
-
 #skills {
     padding-top: 3rem;
     text-align: center;
@@ -353,76 +343,42 @@ body{
     color: var(--color1);
     font-size: 2rem;
     font-weight: 600;
-    
+    margin-bottom: 2rem;
 }
-
 
 #skills .skill-items{
     padding: 0.5rem;
-    width: 85%;  
-
-}
-
-
-#skills .skill-items .skill-item-bar {
-    margin:1rem;
-}
-
-#skills .skill-items .skill-item-bar .skill-item-text{
-    height: 2rem;
-    padding-bottom: 0.5rem;
+    max-width: 800px;
+    /* height: 500px; */
+    /* width: 85%;  */
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    /* height: auto; */
+    justify-content: center;
+    gap: 20px;
+
 }
 
-#skills .skill-items .skill-item-bar .skill-item-text :nth-child(1){
-    
+#skills .skill-items .skill-item-text{
+    /* height: 2rem; */
+    /* padding-bottom: 0.5rem;s */
+    display: flex;
+    flex-direction: column;
+
+    width: 150px;
+}
+
+#skills .skill-items .skill-item-text :nth-child(2){
     color: var(--color4);
     font-weight: 600;
 
 }
-#skills .skill-items .skill-item-bar .skill-item-text :nth-child(2){
-    margin-top: 10px;
+#skills .skill-items .skill-item-text :nth-child(1){
     color: var(--color1);
-    font-size: 0.8rem;
-}
-
-#skills .skill-items .skill-item-bar .skill-bar{
-    height: 1.2rem;
-    background-color: var(--color4);
-    border-radius: 15px;
-
-}
-
-#skills .skill-items .skill-item-bar .skill-bar .bar{
-    height: 100%;
-    padding: 1px;
-    border-radius: 15px;
-} 
-
-
-#sb1{
-    width: 81%;
-    background-color: var(--color1);
-}
-
-#sb2{
-     width: 95%;
-     background-color: var(--color1);
-}
-
-#sb3{
-     width: 60%;
-     background-color: var(--color1);
+    font-size: 3rem;
 }
 
 
-
-
-/*=======================================================*/
-/*======================PORTFOLIO=======================*/
-/*======================================================*/
 
 #portfolio {
     padding-top: 2.5rem;
@@ -443,7 +399,7 @@ body{
 }
 
 #portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide{
-    height: 200px;  
+    height: 250px;  
     width: 300px; 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -465,11 +421,18 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 10px ;
+    margin-bottom: 10px;
 }
 
-/*=======================================================*/
-/*====================== CONTACT  =======================*/
-/*======================================================*/
+#portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide a{
+    text-decoration: none;
+}
+
+#portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide span{
+    color:var(--color4);
+    font-size: 1rem;
+}
+
 
 #contact {
     padding-top: 2.5rem;
@@ -498,6 +461,7 @@ body{
     flex-direction: column;
     align-items:center;
     align-content: center;
+    text-decoration: none;
 
     height: 220px;
     width: 220px; 
@@ -526,21 +490,13 @@ body{
     
 }
 
-/*=======================================================*/
-/*====================== FOOTER  =======================*/
-/*======================================================*/
-
 #footer {
     text-align: center;
     color: var(--color1);
+    background-color: var(--color2);
     font-size: 1.2rem;
     margin-top: 4rem;
-    padding-bottom: 3rem;
-    
-}
-
-#footer span:after {
-    content: ' \26A1';
+    padding: 2rem 0;
     
 }
 
@@ -565,6 +521,7 @@ body{
         transform: translateX(0);
         top:0px;
     }  
+
     #navigation .content-menu-web{
         transition: 0.3s ease-in;
         background-color:var(--color2);
@@ -612,8 +569,9 @@ body{
     #home .image-personal :nth-child(3){
         display: none;
 
-        height: 100%;
+        height: 90%;
         width: 72%; 
+        border-radius: 40%;
         display:block;
         position: absolute;
         bottom: 7%;
@@ -645,11 +603,15 @@ body{
         z-index: 2000;
     }
 
-    #home .plataforms .plataform-box img{
+    #home .plataforms .plataform-box a{
         width: 7rem;
         height: 4rem;
     }
     
+    #home .plataforms .plataform-box i{
+        font-size: 4rem;
+    }
+
     #home .personal-info .personal-info-name{
         width: 200px;
         display: flex;
@@ -759,10 +721,15 @@ body{
         bottom: 50px;
         z-index: 2000;
     }
-    #home .plataforms .plataform-box img{
+    #home .plataforms .plataform-box a{
         width: 10rem;
         height: 7rem;
     }
+
+    #home .plataforms .plataform-box i{
+       font-size: 6rem;
+    }
+
     #home .personal-info{
         top:10%;
     }
@@ -798,7 +765,7 @@ body{
     }
 
 }
-
+/* 
 @media (min-width:1470px){
     #portfolio .projects-box .projectSwiper .swiper-wrapper {
         padding-left: 1rem;
@@ -808,4 +775,4 @@ body{
     
     }
 
-}
+} */

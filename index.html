@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
     <title>My Profile</title>
 </head>
 
 <body class="main">
-
     <section id="navigation">
         <div class="content-navbar" id="contentNavbar">
             <img src="./íconos/menu.svg" id="iconNav" alt="">
@@ -31,8 +31,8 @@
     <section id="home">
         <div class="image-personal">
             <img src="./Vectores/circle.svg" alt="">
-            <img src="./Logos- Imágenes/photo mobile.png" alt="">
-            <img src="./Logos- Imágenes/photo desktop.png" alt="">
+            <img src="./Logos- Imágenes/italo1.png" alt="">
+            <img src="./Logos- Imágenes/italo1.png" alt="">
         </div>
 
         <div class="personal-info">
@@ -40,22 +40,22 @@
                 <p>Soy</p>
                 <p>Italo</p>
                 <hr>
-                <p>Marketing y diseñador UX/UI</p>
+                <p>Desarrollador FullStack</p>
             </div>
             <div class="personal-info-exp">
-                <p><span>3 años</span> experiencia</p>
-            </div>
-            <div class="socialnetwork">
-                <img src="./íconos/linkedin.svg" alt="">
-                <img src="./íconos/instagram.svg" alt="">
-                <img src="./íconos/twitter.svg" alt="">
             </div>
         </div>
         <div class="plataforms">
             <div class="plataform-box">
-                <img src="./íconos/google.svg" alt="">
-                <img src="./íconos/amazon.svg" alt="">
-                <img src="./íconos/spotify.svg" alt="">
+                <a href="https://www.linkedin.com/in/italo-cornejo-herrera-3538a8255/" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/ItaloKornejo?tab=repositories" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.instagram.com/italokor/" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
             </div>
         </div>
     </section>
@@ -63,9 +63,12 @@
     <section id="aboutme">
         <span>Acerca de mi</span>
         <div class="text-aboutme">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis accusamus quos deleniti praesentium
-                enim velit, nesciunt recusandae qui aspernatur amet laudantium repudiandae rerum ut incidunt commodi sed
-                expedita consequatur odit.</p>
+            <p>Soy italo, ingeniero de software y programador de pasion, siempre he estado interesado en las tecnologias
+                tanto hardware como software.
+                Estoy centrado en el desarrollo web utilizando ReactJs y Nodejs con javascript o Typescript para ofrecer
+                soluciones optimas y generar un mayor valor a producto.
+                Cuento con las capacidades de trabajar en equipo y generar la sinergia que nos permita cumplir los
+                objetivos que nos propongan.</p>
         </div>
     </section>
 
@@ -75,19 +78,24 @@
             <div class="swiper serviceSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./íconos/pencil.svg" alt="">
-                        <p>UX/UI Design</p>
-                        <p>Desde diseño hasta implementacion del desarrollo</p>
+                        <i class='bx bx-window-alt'></i>
+                        <p>Web Design</p>
+                        <p>Diseño y maquetado de paginas web</p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./íconos/speaker.svg" alt="">
-                        <p>Marketing</p>
-                        <p>Desde diseño hasta implementacion del desarrollo</p>
+                        <i class='bx bxs-wrench'></i>
+                        <p>Web Development</p>
+                        <p>Desarrollo de paginas Web con React y NodeJS</p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./íconos/search.svg" alt="">
-                        <p>Research</p>
-                    <p>Desde diseño hasta implementacion del desarrollo</p>
+                        <i class='bx bxs-devices'></i>
+                        <p>Responsive Design</p>
+                        <p>Diseño de paginas web para dispositivos moviles</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class='bx bx-support'></i>
+                        <p>Technical Support</p>
+                        <p>Soporte Tecnico a equipos electronicos</p>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -98,33 +106,45 @@
     <section id="skills">
         <span>Mis habilidades</span>
         <div class="skill-items">
-            <div class="skill-item-bar">
-                <div class="skill-item-text">
-                    <p>MySQL</p>
-                    <p>81%</p>
-                </div>
-                <div class="skill-bar">
-                    <div class="bar" id="sb1"></div>
-                </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-javascript'></i>
+                <p>Javascript</p>
             </div>
-            <div class="skill-item-bar">
-                <div class="skill-item-text">
-                    <p>Java</p>
-                    <p>95%</p>
-                </div>
-                <div class="skill-bar">
-                    <div class="bar" id="sb2"></div>
-                </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-html5'></i>
+                <p>HTML</p>
+
             </div>
-            <div class="skill-item-bar">
-                <div class="skill-item-text">
-                    <p>UX Research</p>
-                    <p>60%</p>
-                </div>
-                <div class="skill-bar">
-                    <div class="bar" id="sb3"></div>
-                </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-css3'></i>
+                <p>CSS</p>
+
             </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-react'></i>
+                <p>React JS</p>
+
+            </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-typescript'></i>
+                <p>TypeScript</p>
+
+            </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-postgresql'></i>
+                <p>MySQL</p>
+
+            </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-java'></i>
+                <p>Java</p>
+
+            </div>
+            <div class="skill-item-text">
+                <i class='bx bxl-c-plus-plus'></i>
+                <p>C++</p>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -134,13 +154,47 @@
             <div class="swiper projectSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./Logos- Imágenes/ejemplo5.jpg" alt="">
+                        <a href="https://jazzy-zabaione-f36eb2.netlify.app/" target="_blank">
+                            <img src="./Logos- Imágenes/PF5.png" alt="">
+                            <span>Electro Ecommerce</span>
+                        </a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./Logos- Imágenes/ejemplo2.jpg" alt="">
+                        <a href="https://jolly-bubblegum-28f410.netlify.app/">
+                            <img src="./Logos- Imágenes/PF4.png" alt="">
+                            <span>Poke Api</span>
+                        </a>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./Logos- Imágenes/ejemplo3.jpg" alt="">
+                        <a href="https://zippy-parfait-e7f5a5.netlify.app/">
+                            <img src="./Logos- Imágenes/PF3.png" alt="">
+                            <span>User CRUD</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://admirable-dusk-29c97d.netlify.app/">
+                            <img src="./Logos- Imágenes/PF2.png" alt="">
+                            <span>Rick And Morty</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://hilarious-hotteok-e3b8f7.netlify.app">
+                            <img src="./Logos- Imágenes/PF1.png" alt="">
+                            <span>Weather App</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://sparkly-jalebi-b224ab.netlify.app">
+                            <img src="./Logos- Imágenes/PF0.png" alt="">
+                            <span>Random quote</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://ornate-daffodil-93974d.netlify.app/">
+                            <img src="./Logos- Imágenes/PFEC.png" alt="">
+                            <span>Books Ecommerce</span>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -150,23 +204,22 @@
     <section id="contact">
         <span>Contacto</span>
         <div class="canals">
-            <div class="box-canal">
+            <a class="box-canal" href="https://wa.me/051967396679" target="_blank">
                 <img src="./íconos/phone.svg" alt="">
                 <p>Numero Celular</p>
                 <p>+51-957396679</p>
-            </div> 
-            <div class="box-canal">
+            </a>
+            <a class="box-canal">
                 <img src="./íconos/mail.svg" alt="">
                 <p>Email</p>
                 <p>italokornejo@gmial.com</p>
-            </div>
+            </a>
         </div>
     </section>
 
     <section id="footer">
-        <span>Hecho por Italo con </span>
+        <span>Made by Italo 2022</span>
     </section>
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
