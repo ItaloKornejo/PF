@@ -243,6 +243,7 @@ body{
 .cv-document{
     font-weight: bold;
     color: var(--color2);
+    font-size: 2rem;
 }
 
 #aboutme {
@@ -497,6 +498,11 @@ body{
 
 @media (min-width:850px){
 
+    .cv-document{
+        color: var(--color2);
+        font-size: 3rem;
+    }
+
     #navigation .content-navbar{
         display: none;
     }
@@ -665,13 +671,13 @@ body{
         padding-top: 4.5rem;
     }
 
-    #services .services-card .serviceSwiper .swiper-wrapper{
+    /* #services .services-card .serviceSwiper .swiper-wrapper{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         align-content: center;
-    }
+    } */
     #portfolio .projects-box .projectSwiper .swiper-wrapper .swiper-slide {
         height: 300px;  
         width: 450px; 
@@ -708,6 +714,14 @@ body{
 
         width: 430px; 
 
+    }
+
+        #services .services-card .serviceSwiper .swiper-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     #home .plataforms {
